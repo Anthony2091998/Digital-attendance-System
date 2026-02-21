@@ -40,3 +40,18 @@ void createSession() {
     file.close();
 }
 
+// main.cpp (continued)
+int main() {
+    int choice;
+    do {
+        cout << "1. Register Student" << endl;
+        cout << "2. Create Session" << endl;
+        cout << "3. Exit" << endl;
+        cin >> choice;
+        switch (choice) {
+            case 1: registerStudent(); break;
+            case 2: createSession(); break;
+        }
+    } while (choice != 3);
+    return 0;
+}
