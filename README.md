@@ -22,4 +22,21 @@ AttendanceSession::AttendanceSession(string code, string d, string st, int dur) 
     startTime = st;
     duration = dur;
 }
+// attendance_session.cpp (continued)
+void createSession() {
+    string code, date, startTime;
+    int duration;
+    cout << "Enter course code: ";
+    cin >> code;
+    cout << "Enter date: ";
+    cin >> date;
+    cout << "Enter start time: ";
+    cin >> startTime;
+    cout << "Enter duration: ";
+    cin >> duration;
+    AttendanceSession as(code, date, startTime, duration);
+    ofstream file("sessions.txt", ios::app);
+    file << as.courseCode << "," << as.date << "," << as.startTime << "," << as.duration << endl;
+    file.close();
+}
 
