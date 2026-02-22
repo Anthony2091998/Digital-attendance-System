@@ -64,3 +64,17 @@ void viewStudents() {
     }
     file.close();
 }
+// student.cpp (continued)
+void searchStudent() {
+    string idx;
+    cout << "Enter index number: ";
+    cin >> idx;
+    ifstream file("students.txt");
+    string line;
+    while (getline(file, line)) {
+        if (line.find(idx) != string::npos) {
+            cout << line << endl;
+        }
+    }
+    file.close();
+}
