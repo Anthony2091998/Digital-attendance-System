@@ -89,6 +89,9 @@ void displayAttendance() {
         if (line.find(code) != string::npos) {
             cout << line << endl;
         }
-
+// attendance_session.cpp (continued)
+void generateReport() {
+    // implement report generation logic
+}
 
 
