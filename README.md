@@ -92,3 +92,7 @@ void displayAttendance() {
     }
     file.close();
 }
+// attendance_session.cpp (continued)
+void generateReport() {
+    // implement report generation logic
+}
