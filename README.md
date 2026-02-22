@@ -78,3 +78,17 @@ void searchStudent() {
     }
     file.close();
 }
+// attendance_session.cpp (continued)
+void displayAttendance() {
+    string code;
+    cout << "Enter course code: ";
+    cin >> code;
+    ifstream file("attendance.txt");
+    string line;
+    while (getline(file, line)) {
+        if (line.find(code) != string::npos) {
+            cout << line << endl;
+        }
+    }
+    file.close();
+}
