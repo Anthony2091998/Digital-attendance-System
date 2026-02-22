@@ -93,5 +93,9 @@ void displayAttendance() {
 void generateReport() {
     // implement report generation logic
 }
-
+// main.cpp (continued)
+int main() {
+    // test and debug the system
+    return 0;
+}
 
