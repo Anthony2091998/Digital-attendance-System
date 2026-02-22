@@ -55,3 +55,12 @@ int main() {
     } while (choice != 3);
     return 0;
 }
+// student.cpp (continued)
+void viewStudents() {
+    ifstream file("students.txt");
+    string line;
+    while (getline(file, line)) {
+        cout << line << endl;
+    }
+    file.close();
+}
