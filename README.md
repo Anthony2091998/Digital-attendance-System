@@ -98,4 +98,12 @@ int main() {
     // test and debug the system
     return 0;
 }
-
+// README.md
+# Digital Attendance System
+## Project Description
+A digital attendance system for managing student attendance.
+## Features
+* Register students
+* Create sessions
+* Mark attendance
+* Generate reports
